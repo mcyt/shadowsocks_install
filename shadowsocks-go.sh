@@ -151,8 +151,8 @@ pre_install(){
     fi
     # Set shadowsocks-go config password
     echo "Please enter password for shadowsocks-go:"
-    read -p "(Default password: teddysun.com):" shadowsockspwd
-    [ -z "${shadowsockspwd}" ] && shadowsockspwd="teddysun.com"
+    read -p "(Default password: YTYS):" shadowsockspwd
+    [ -z "${shadowsockspwd}" ] && shadowsockspwd="YTYS"
     echo
     echo "---------------------------"
     echo "password = ${shadowsockspwd}"
@@ -250,12 +250,12 @@ download_files(){
 
     # Download start script
     if check_sys packageManager yum; then
-        if ! wget --no-check-certificate -O /etc/init.d/shadowsocks https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-go; then
+        if ! wget --no-check-certificate -O /etc/init.d/shadowsocks https://raw.githubusercontent.com/mcyt/shadowsocks_install/master/shadowsocks-go; then
             echo -e "[${red}Error${plain}] Failed to download shadowsocks-go auto start script!"
             exit 1
         fi
     elif check_sys packageManager apt; then
-        if ! wget --no-check-certificate -O /etc/init.d/shadowsocks https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-go-debian; then
+        if ! wget --no-check-certificate -O /etc/init.d/shadowsocks https://raw.githubusercontent.com/mcyt/shadowsocks_install/master/shadowsocks-go-debian; then
             echo -e "[${red}Error${plain}] Failed to download shadowsocks-go auto start script!"
             exit 1
         fi
@@ -343,7 +343,7 @@ install(){
     echo -e "Your Password         : \033[41;37m ${shadowsockspwd} \033[0m"
     echo -e "Your Encryption Method: \033[41;37m ${shadowsockscipher} \033[0m"
     echo
-    echo "Welcome to visit:https://teddysun.com/392.html"
+    echo "Welcome to visit:YTYS"
     echo "Enjoy it!"
     echo
 }
