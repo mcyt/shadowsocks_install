@@ -338,10 +338,10 @@ install(){
     clear
     echo
     echo -e "Congratulations, Shadowsocks-go server install completed!"
-    echo -e "Your Server IP        : \033[41;37m $(get_ip) \033[0m"
-    echo -e "Your Server Port      : \033[41;37m ${shadowsocksport} \033[0m"
-    echo -e "Your Password         : \033[41;37m ${shadowsockspwd} \033[0m"
-    echo -e "Your Encryption Method: \033[41;37m ${shadowsockscipher} \033[0m"
+    echo -e "IP        : \033[41;37m $(get_ip) \033[0m"
+    echo -e "端口      : \033[41;37m ${shadowsocksport} \033[0m"
+    echo -e "密码      : \033[41;37m ${shadowsockspwd} \033[0m"
+    echo -e "加密方式  : \033[41;37m ${shadowsockscipher} \033[0m"
     echo
     echo "Welcome to visit:YTYS"
     echo "Enjoy it!"
